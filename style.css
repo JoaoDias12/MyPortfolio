@@ -1,0 +1,530 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-weight:100;
+}
+
+:root {
+
+  --primary-color: #27374D;
+  --secondary-color: #526D82;
+  --tertiary-color:#9DB2BF;
+  --quartenary-color: #DDE6ED ;
+
+}
+
+body {
+  background: var(--secondary-color);
+  font-family: 'Comfortaa', cursive;
+  color:var(--quartenary-color);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 100%;
+  height: 5rem;
+
+  box-shadow: 0px 0px 16px 1px black;
+
+  position: fixed;
+  top: 0;
+
+  background: var(--primary-color);
+
+  z-index: 100;
+}
+
+ h1 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--quartenary-color);
+}
+
+.Contacts {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  position: absolute;
+}
+
+.Contacts i {
+  font-size:2rem;
+  font-weight: 900;
+  color:var(--quartenary-color);
+  text-shadow: 2px 2px 0px var(--primary-color);
+}
+
+.Contacts button {
+  background: none;
+  cursor: pointer;
+}
+
+
+.menu {
+  display: flex;
+  gap: 2rem;
+
+  list-style-type: none;
+}
+
+.menu li a {
+  color: var(--quartenary-color);
+  font-weight: 900;
+}
+
+.selectLanguage {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+#selectLanguage {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background: var(--primary-color);
+  color: var(--quartenary-color);
+  font-size: 1.5rem;
+  width: 10rem;
+  text-align: center;
+
+  outline: none;
+  
+  border: 2px solid  var(--quartenary-color);
+}
+
+.selectColorPage {
+  margin-top: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.selectColorPage h2 span {
+  color: var(--primary-color);
+  font-weight: 800;
+}
+
+.colors {
+  display:flex;
+  width: 18rem;
+  height: 3rem;
+}
+
+.selectColorPage .colors input {
+  display: none;
+}
+
+.selectColorPage .colors label {
+  width: 3rem;
+  height: 100%;
+
+  outline: none;
+
+  cursor: pointer;
+}
+
+.selectColorPage .colors input:checked + label {
+  transform: scale(1.2);
+  transition: 1s;
+}
+
+.sL1 {
+  background: #27374D;
+}
+
+.sL2 {
+  background: #18122B;
+}
+
+.sL3 {
+  background: #0A2647;
+}
+
+.sL4 {
+  background: #E23E57;
+}
+
+.sL5 {
+  background: #AD8B73;
+}
+
+.sL6 {
+  background: #E3FDFD;
+}
+
+.Welcome {
+  margin-top: 2rem;
+
+  width: 45rem;
+
+  padding: 1rem;
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.welcomeImg {
+  width: 25rem;
+  height: 25rem;
+
+  clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+
+  display: flex;
+  align-items:flex-end;
+  justify-content: center;
+
+  background-color: var(--primary-color);
+
+  position: relative;
+
+  padding: 0.5rem;
+}
+
+.welcomeImgBg {
+  width: 100%;
+  height: 100%;
+
+  clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+
+  background: var(--tertiary-color);
+}
+
+.welcomeImg img {
+  width: 20rem;
+  height: 25rem;
+
+  position: absolute;
+  bottom: -6rem;
+}
+
+.welcomeMsg {
+  background-color: var(--tertiary-color);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  width: 45rem;
+  height: 8rem;
+
+  padding: 1rem;
+
+  border-radius: 0.5rem;
+
+  font-weight: 900;
+  text-shadow: 2px 2px 1px var(--primary-color);
+
+  clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0 50%);
+}
+
+#welcomeIam {
+  width: 35rem;
+  text-align: center;
+}
+
+#About {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+
+  width: 100%;
+  height: 100vh;
+}
+
+#aboutMeH {
+  font-size: 2rem;
+  font-weight: 900;
+  text-shadow: 3px 3px 0px var(--primary-color);
+}
+
+.aboutMe {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.myLanguages {
+  width: 10rem;
+  height: 35rem;
+
+  background-color: var(--primary-color);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  gap: 2rem;
+}
+
+.myLanguages input {
+  display: none;
+}
+
+.myLanguages label {
+  cursor: pointer;
+
+  width: 4.5rem;
+  height: 4.5rem;
+
+  filter: grayscale(1);
+}
+
+#Llb0 {
+  background: url(imgs/robot.png);
+  background-size: 100% 100%;
+  background-position: 0px 20px;
+  background-repeat: no-repeat;
+}
+
+#Llb1 {
+  background: url(imgs/iconHTML.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#Llb2 {
+  background: url(imgs/iconCSS.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#Llb3 {
+  background: url(imgs/iconJS.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#Llb4 {
+  background: url(imgs/iconNode.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.myLanguages input:checked + label {
+  transform: scale(1.2);
+  transition: 1s;
+  filter: grayscale(0);
+}
+
+.screenAbout {
+  width: 60rem;
+  height: 35rem;
+
+  background-color: var(--primary-color);
+
+  display: flex;
+  align-items: center;
+  padding: 3rem;
+}
+
+#aboutMe {
+  text-align: center;
+}
+
+#aboutMe span {
+  font-weight: 900;
+  color: var(--secondary-color);
+}
+
+#Projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  height: 100vh;
+}
+
+#myProjects {
+  margin-top: 7rem;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  font-weight: 900;
+
+  text-shadow: 3px 3px 0px var(--primary-color);
+}
+
+.Project {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 90rem;
+  height: 45rem;
+  background: var(--primary-color);
+
+  box-shadow: 0px 0px 16px 4px black;
+}
+
+.Project div {
+  width: 40rem;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+}
+
+.Project div img {
+  width: 35rem;
+  height: 20rem;
+  border: 4px solid var(--quartenary-color);
+}
+
+.Project h2 {
+  font-size: 1rem;
+  font-weight: 900;
+  text-align: center;
+  
+  background: var(--secondary-color);
+  clip-path: polygon(5% 0, 95% 0, 100% 50%, 95% 100%, 5% 100%, 0% 50%);
+
+  padding: 1rem;
+
+  height: 15rem;
+
+  display: flex;
+  align-items: center;
+}
+
+#Knowledge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  height: 100vh;
+
+  margin-bottom: 5rem;
+}
+
+#Knowledge h2 {
+  font-weight: 900;
+    text-shadow: 3px 3px 0px var(--primary-color);
+}
+
+#myKnowledge {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-top: 10rem;
+  text-shadow: 3px 3px 0px var(--primary-color);
+}
+
+.Knowledges {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.Knowledges h2{
+font-weight: 500;
+}
+
+.BroadKnowledge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.BroadIcons {
+  display: flex;
+  gap: 1rem;
+}
+
+.BroadIcons img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.AverageKnowledge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.AverageIcons {
+  display: flex;
+  gap: 2rem;
+}
+
+.AverageIcons img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.IntendStudy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.IntendIcons {
+  display: flex;
+  gap: 2rem;
+}
+
+.IntendIcons img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.social {
+  display: flex;
+  gap: 1rem;
+}
+
+.social i {
+  font-size:2rem;
+  font-weight: 900;
+  color:var(--quartenary-color);
+  text-shadow: 2px 2px 0px var(--primary-color);
+}
+
+.social button {
+  background: none;
+}
+
+footer {
+  width: 100%;
+  height: 10rem;
+  background: var(--primary-color);
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

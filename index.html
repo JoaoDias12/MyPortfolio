@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Portifolio</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="icons/style.css" />
+    <link rel="icon" href="imgs/J.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="Header">
+      <a href="#selectLanguage"><h1>&lt / João Vitor &gt</h1></a>
+
+      <div class="Contacts">
+        <a target="_blank" href="https://github.com/JoaoDias12"
+          ><i class="icon-github"></i
+        ></a>
+        <a
+          target="_blank"
+          href="https://api.whatsapp.com/send?phone=+5511932640602&text= Bom dia!!!"
+          ><i class="icon-whatsapp"></i
+        ></a>
+        <button id="btnPhone"><i class="icon-phone"></i></button>
+        <button id="btnMail"><i class="icon-mail"></i></button>
+      </div>
+
+      <ul class="menu">
+        <li><a id="TaboutMe" href="#About"></a></li>
+        <li><a id="Tprojects" href="#Projects"></a></li>
+        <li><a id="Tnows" href="#Knowledge"></a></li>
+      </ul>
+    </header>
+
+    <div class="selectLanguage">
+      <h2>Language</h2>
+      <select name="" id="selectLanguage">
+        <option value=""></option>
+        <option value="Portuguese">Portuguese</option>
+        <option value="English">English</option>
+      </select>
+    </div>
+
+    <div class="selectColorPage">
+      <h2 id="TchooseColor"></h2>
+      <form id="formColors" class="colors">
+        <input checked id="firstColor" name="colorPage" type="radio" />
+        <label class="sL1" for="firstColor"></label>
+        <input id="secondColor" name="colorPage" type="radio" />
+        <label class="sL2" for="secondColor"></label>
+        <input id="thirdColor" name="colorPage" type="radio" />
+        <label class="sL3" for="thirdColor"></label>
+        <input id="fourthColor" name="colorPage" type="radio" />
+        <label class="sL4" for="fourthColor"></label>
+        <input id="fifthColor" name="colorPage" type="radio" />
+        <label class="sL5" for="fifthColor"></label>
+        <input id="sixthColor" name="colorPage" type="radio" />
+        <label class="sL6" for="sixthColor"></label>
+      </form>
+    </div>
+
+    <section class="Welcome" id="Welcome">
+      <div class="welcomeImg">
+        <div class="welcomeImgBg"></div>
+        <img
+          class="animate__animated animate__jackInTheBox"
+          src="imgs/robot.png"
+          alt=""
+        />
+      </div>
+      <div class="welcomeMsg">
+        <h2 id="helloWorld" class="animate__animated"></h2>
+        <h2 id="welcomeIam" class=""></h2>
+      </div>
+    </section>
+
+    <section id="About">
+      <h2 id="aboutMeH"></h2>
+      <div class="aboutMe">
+        <form id="myLanguages" class="myLanguages">
+          <input id="me" name="myLanguages" type="radio" />
+          <label id="Llb0" for="me"></label>
+          <input id="myLanguageHTML" name="myLanguages" type="radio" />
+          <label id="Llb1" for="myLanguageHTML"></label>
+          <input id="myLanguageCSS" name="myLanguages" type="radio" />
+          <label id="Llb2" for="myLanguageCSS"></label>
+          <input id="myLanguageJS" name="myLanguages" type="radio" />
+          <label id="Llb3" for="myLanguageJS"></label>
+          <input id="myLanguageNODE" name="myLanguages" type="radio" />
+          <label id="Llb4" for="myLanguageNODE"></label>
+        </form>
+        <div class="screenAbout">
+          <h2 id="aboutMe"></h2>
+        </div>
+      </div>
+    </section>
+
+    <section id="Projects">
+      <h2 id="myProjects"></h2>
+
+      <div class="Project">
+        <div class="ProjectAgenda">
+          <img src="imgs/gifs/Agenda.gif" />
+          <h2 id="myProject1"></h2>
+        </div>
+        <div class="ProjectShirt">
+          <img src="imgs/gifs/Camisa.gif" />
+          <h2 id="myProject2"></h2>
+        </div>
+      </div>
+    </section>
+
+    <section id="Knowledge">
+      <h2 id="myKnowledge"></h2>
+
+      <div class="Knowledges">
+        <div class="BroadKnowledge">
+          <h2 id="myAmple"></h2>
+          <div class="BroadIcons">
+            <img src="imgs/iconHTML.png" alt="" />
+            <img src="imgs/iconCSS.png" alt="" />
+            <img src="imgs/iconJS.png" alt="" />
+            <img src="imgs/jQuery.png" alt="" />
+          </div>
+        </div>
+        <div class="AverageKnowledge">
+          <h2 id="myMedium"></h2>
+          <div class="AverageIcons">
+            <img src="imgs/iconNode.png" alt="" />
+            <img src="imgs/React.png" alt="" />
+            <img src="imgs/Bootstrap.png" alt="" />
+            <img src="imgs/socket.io.png" alt="" />
+            <img src="imgs/tailwind.png" alt="" />
+            <img src="imgs/Csharp.png" alt="" />
+            <img src="imgs/Php.png" alt="" />
+          </div>
+        </div>
+        <div class="IntendStudy">
+          <h2 id="myIntend"></h2>
+          <div class="IntendIcons">
+            <img src="imgs/Python.png" alt="" />
+            <img src="imgs/C++.png" alt="" />
+            <img src="imgs/C.png" alt="" />
+            <img src="imgs/Java.png" alt="" />
+            <img src="imgs/Django.png" alt="" />
+            <img src="imgs/Angular.png" alt="" />
+            <img src="imgs/TypeScript.png" alt="" />
+            <img src="imgs/MySql.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="brand">
+        <a href="#selectLanguage"><h1>Created by &lt / João Vitor &gt</h1></a>
+        <p>©2023</p>
+        <p id="allDirects">Todos os direitos reservados.</p>
+      </div>
+      <div class="social">
+        <a target="_blank" href="https://github.com/JoaoDias12"
+          ><i class="icon-github"></i
+        ></a>
+        <a
+          target="_blank"
+          href="https://api.whatsapp.com/send?phone=+5511932640602&text= Bom dia!!!"
+          ><i class="icon-whatsapp"></i
+        ></a>
+        <button id="btnPhone"><i class="icon-phone"></i></button>
+        <button id="btnMail"><i class="icon-mail"></i></button>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+    <script src="traduções.js"></script>
+  </body>
+</html>
