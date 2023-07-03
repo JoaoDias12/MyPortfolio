@@ -55,7 +55,7 @@ function Portuguese() {
     if (TimeLeft == 54) {
       clearInterval(TimeDown)
     }
-    welcomeIam.textContent += msgWelcome.charAt(TimeLeft)
+    welcomeIam.textContent = msgWelcome.charAt(TimeLeft)
     TimeLeft += 1
   }, 80)
 
@@ -147,7 +147,7 @@ function English() {
     if (TimeLeft == 54) {
       clearInterval(TimeDown)
     }
-    welcomeIam.textContent += msgWelcome.charAt(TimeLeft)
+    welcomeIam.textContent = msgWelcome.charAt(TimeLeft)
     TimeLeft += 1
   }, 80)
 
